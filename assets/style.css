@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: inline;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 80px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+  background-image: url(images/hotel.jpg);
+  background-size: cover;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+}
+
+.dark h1 {
+  font-size: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+.dark p {
+  font-size: 20px;
+}
+
+nav {
+  background-color: #3465f7;
+  box-shadow: 0px 4px 8px 0 rgba(6, 45, 161, 0.3);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 40px;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+/* Main Style */
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+#content article h1 {
+  text-align: center;
+  color: #0f0cb3;
+  font-size: 30px;
+}
+
+article {
+  box-shadow: 0px 4px 8px 0 rgba(61, 168, 255, 0.3);
+  border-radius: 5px;
+  padding: 30px;
+  padding-top: 15px;
+  margin-top: 0px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.flex-basis {
+  flex-basis: 50%;
+  text-align: center;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 0px;
+  border: 1px solid lightslategray;
+}
+
+.flex-basis img {
+  max-width: 60%;
+  max-height: 50%;
+}
+
+.flex-basis button {
+  padding: 10px;
+  background-color: #24a0ed;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 6%;
+}
+
+.flex-basis button:hover {
+  font-weight: bold;
+}
+
+/* Aside Style */
+aside {
+  float: right;
+  width: 25%;
+  text-align: center;
+  padding-left: 20px;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+table {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d31a6;
+  height: 80px;
+  text-align: center;
+  color: white;
+}
+
+.footer h4 {
+  padding-top: 12px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  table {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 10px;
+  }
+
+  .dark {
+    padding: 20px;
+  }
+
+  .dark h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    padding: 1px;
+  }
+
+  nav a {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .flex-column {
+    flex-direction: column;
+  }
+}
